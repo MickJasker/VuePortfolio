@@ -43,6 +43,9 @@ export default {
 @import "../assets/_var.scss";
 
 main {
+  background-image: url("../assets/bg.jpg");
+  background-size: cover;
+  background-position: left bottom;
   .landing {
     padding: 150px;
 
@@ -63,6 +66,7 @@ main {
   }
   display: flex;
   flex-flow: column;
+  justify-content: space-between;
   align-content: center;
   .info {
     justify-content: space-around;
@@ -72,6 +76,7 @@ main {
       justify-content: center;
       align-items: center;
       box-shadow: 0 20px 40px rgba($color: #000000, $alpha: 0.125);
+      background: $white;
       border-radius: 16px;
       padding: 30px;
       margin: 50px;
@@ -103,14 +108,12 @@ main {
           padding: 10px 20px;
           box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.125);
           transition: 0.3s ease;
-
           &:hover {
             box-shadow: 0 15px 30px rgba($color: #000000, $alpha: 0.125);
             cursor: pointer;
           }
-
           &:active {
-            background: lighten($color: $primary, $amount: 15);
+            background: lighten($color: $primary, $amount: 5);
             box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.125);
           }
 
