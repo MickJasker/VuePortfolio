@@ -5,8 +5,8 @@
         <ul>
           <router-link to="/">Home</router-link>
           <router-link to="/portfolio">Portfolio</router-link>
-          <router-link to="/">About me</router-link>
-          <router-link to="/">Contact</router-link>
+          <router-link to="/about">About me</router-link>
+          <router-link to="/contact">Contact</router-link>
         </ul>
       </nav>
     </transition>
@@ -46,6 +46,7 @@ export default {
 
 header {
   position: fixed;
+  z-index: 10000;
   button {
     border: none;
     padding: 0;

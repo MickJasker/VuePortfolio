@@ -6,7 +6,7 @@
       <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
     </section>
     <section class="info d-flex">
-      <section class="box">
+      <section class="box" data-aos="fade-up">
         <img src="../assets/work.svg" alt="work">
         <h3>My portfolio</h3>
         <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
@@ -14,19 +14,19 @@
           <button>View my work</button>
         </router-link>
       </section>
-      <section class="box">
+      <section class="box" data-aos="fade-up">
         <img src="../assets/personal.svg" alt="personal">
         <h3>About me</h3>
-        <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
-        <router-link to="/">
+        <h6>As a bartender and a ICT student I'm always on the lookout for social interaction and ways to make my workflow more efficient.</h6>
+        <router-link to="/about">
           <button>Read more</button>
         </router-link>
       </section>
-      <section class="box">
+      <section class="box" data-aos="fade-up">
         <img src="../assets/contact.svg" alt="contact">
         <h3>Contact</h3>
-        <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
-        <router-link to="/">
+        <h6>Send me an email, a phone call or an old fashioned letter.</h6>
+        <router-link to="/contact">
           <button>Send me a message</button>
         </router-link>
       </section>
@@ -75,7 +75,7 @@ main {
       flex-flow: column;
       justify-content: center;
       align-items: center;
-      box-shadow: 0 20px 40px rgba($color: #000000, $alpha: 0.125);
+      box-shadow: $el500;
       background: $white;
       border-radius: 16px;
       padding: 30px;
@@ -106,15 +106,15 @@ main {
           color: $white;
           background: $primary;
           padding: 10px 20px;
-          box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.125);
+          box-shadow: $el200;
           transition: 0.3s ease;
           &:hover {
-            box-shadow: 0 15px 30px rgba($color: #000000, $alpha: 0.125);
+            box-shadow: $el300;
             cursor: pointer;
           }
           &:active {
             background: lighten($color: $primary, $amount: 5);
-            box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.125);
+            box-shadow: $el200;
           }
 
           &:focus {

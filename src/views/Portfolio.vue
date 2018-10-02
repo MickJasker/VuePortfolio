@@ -1,13 +1,9 @@
 <template>
   <main class="portfolio container">
     <h1>My work</h1>
-    <blockquote>
-      <i class="material-icons">warning</i>
-      <h5>Please note:</h5>
-      <p>This portfolio is still under development and it will change a lot in the foreseeable future.</p>
-    </blockquote>
     <section class="grid">
       <router-link 
+        data-aos="fade-up"
         :to="{name: 'portfolioItem', params: {id: item.id, name: item.name}}" 
         class="item" 
         v-for="item in portfolioItems" 
@@ -85,13 +81,13 @@ export default {
       break-inside: avoid;
       width: 100%;
       margin: 0 0 20px;
-      padding: 20px;
+      padding: $border-radius;
       height: 500px;
-      box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.25);
+      box-shadow: $el100;
       border-radius: 20px;
       transition: 0.3s ease;
       background: white;
-      color: white;
+      color: white !important;
       text-decoration: none;
       i {
         opacity: 0;
@@ -100,7 +96,7 @@ export default {
         margin: 0;
       }
       &:hover {
-        box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.25);
+        box-shadow: $el300;
         transform: scale(1.01);
         cursor: pointer;
         i {

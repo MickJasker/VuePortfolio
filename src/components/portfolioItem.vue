@@ -7,7 +7,6 @@
           <h6>{{tag}}</h6>
           <h6>{{date}}</h6>
         </div>
-
       </div>
     </section>
     <article class="container" v-html="content"/>
