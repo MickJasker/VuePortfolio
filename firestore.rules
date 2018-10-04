@@ -3,5 +3,8 @@ service cloud.firestore {
     match /{document=**} {
       allow read;
     }
+    match /{document=**} {
+      allow write: if request.auth.uid != null;
+    }
   }
 }

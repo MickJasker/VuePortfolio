@@ -35,7 +35,7 @@ export default {
 
 @import "./assets/_var.scss";
 
-@import "./assets/prism.css";
+//@import "./assets/prism.css";
 
 * {
   margin: 0;

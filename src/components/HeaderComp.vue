@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header v-if="nav">
     <transition name="slide">
       <nav v-if="header">
         <ul>
@@ -17,11 +17,13 @@
 </template>
 
 <script>
+import firebase from "firebase";
 export default {
   name: "header-comp",
   data() {
     return {
-      header: false
+      header: false,
+      nav: true
     };
   },
   methods: {
@@ -36,6 +38,11 @@ export default {
   watch: {
     $route() {
       this.header = false;
+      if (firebase.auth().currentUser) {
+        this.nav = false;
+      } else {
+        this.nav = true;
+      }
     }
   }
 };
@@ -47,6 +54,7 @@ export default {
 header {
   position: fixed;
   z-index: 10000;
+
   button {
     border: none;
     padding: 0;
@@ -55,6 +63,7 @@ header {
     //z-index: 2200;
     background: none;
     z-index: 1020;
+
     i {
       padding: 10px;
       color: $primary;

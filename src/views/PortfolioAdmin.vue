@@ -19,7 +19,7 @@
           
           <div class="buttons">
             <button class="edit">Edit</button>
-            <button class="delete">Delete</button>
+            <button class="delete" @click="deleteItem(item.id)">Delete</button>
           </div>
         </div>
       </div>
@@ -48,10 +48,16 @@ export default {
         .catch(() => {});
     },
     deleteItem(id) {
-      this.deleteAlert = true;
-      if (this.delete) {
-        firebase.firestore().doc("portfolio/" + id);
-      }
+      firebase
+        .firestore()
+        .doc("portfolio/" + id)
+        .delete()
+        .then(() => {
+          //console.log("The item is deleted");
+        })
+        .catch(() => {
+          //console.log(err);
+        });
     }
   },
   created() {
