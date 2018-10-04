@@ -6,7 +6,7 @@ import "bootstrap";
 import "./firebase";
 import firebase from "firebase/app";
 import "firebase/firestore";
-import "./prism";
+//import "./prism";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

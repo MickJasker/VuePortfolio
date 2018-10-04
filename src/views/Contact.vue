@@ -15,6 +15,7 @@
 </template>
 <style lang="scss" scoped>
 @import "../assets/_var.scss";
+
 .contact {
   display: flex;
   align-items: center;
@@ -25,9 +26,12 @@
     padding: 50px;
     background: white;
     box-shadow: $el500;
+    border-radius: 20px;
+
     ul {
       padding: 0;
       margin: 0;
+
       li {
         list-style: none;
         margin-top: 10px;

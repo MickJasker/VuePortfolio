@@ -7,70 +7,26 @@
           <h5 data-aos="fade-up">As a bartender and a ICT student I'm always on the lookout for social interaction and
           ways to make my
           workflow more efficient.</h5>
-          <p data-aos="fade-up">More than two years ago I started the study of ICT & Media Design at the Fontys
-          university of applied
-          sciences in Eindhoven. During the first semester I learned the basics of ICT including in C# and of course
-          HTML5/CSS3. I really struggled during this semester because I had no background in programming whatsoever,
-          luckily during the second period it struck me how OOP programming works and I finished programming with a
-          7/10.</p>
+          <p data-aos="fade-up">In august 2016 I started the study ICT at the Fontys University of applied sciences in
+          Eindhoven. After going through all the basics (HTML, CSS, C#, UX, Business, Arduino) in the first semester
+          I chose the ICT & media design route. In the second semester I started learning working with web
+          programming languages like PHP and JavaScript. I also learned a lot about concepting, media strategies and
+          user experience.</p>
+          <p>
+            After this semester I dropped PHP and focused myself completely on JavaScript and I started working with
+            the CSS preprocessor SCSS. During this semester I also first got into contact with JS framework, after
+            doing a really basic tutorial on React and Vue I decided to start with working with Vue because this
+            framework has less steeper learning curve and only starts showing disadvantages if you’re really building
+            huge applications, which wasn’t the case for me. Because I dropped PHP I didn’t have a backend environment
+            for my projects. That’s when a friend recommended Firebase to me, backend made easy. It gave all the things
+            I needed to get my projects up and running, like Firestore to store my data and Firebase Auth to
+            authenticate my users.
+          </p>
         </div>
         <div class="col-lg-5">
           <img src="../assets/Profiel.jpg" alt="" data-aos="fade-up">
         </div>
       </div>
-      <hr data-aos="fade-up">
-      <section id="s2" data-aos="fade-up">
-        <h2>Semester 2 - Branding experience</h2>
-        <h6>February 2017 - June 2017</h6>
-        <p>During my second semester I actually started with the course Media Design. Here I started
-        working with PHP and
-        basic JS. I also started with user centered design, concepting and media strategies. Our group assignment was
-        focused working on the complete branding of an artist of the rock academy in Tilburg. I finished this
-        semester
-        with flying colors with an average 7/10.</p>
-        <a href="/#/portfolio/Duncan%20Laurence=PpP2CqM0kvn1JHwkqkjV">Read more...</a>
-      </section>
-      <hr data-aos="fade-up">
-      <section id="vooruitgang" data-aos="fade-up">
-        <h2>De Vooruitgang</h2>
-        <h6>March 2017</h6>
-        <p>After moving to Eindhoven, I quickly found a job at a beautiful bar at the main square.
-        It’s one of the biggest bars in the city with 330+ seats and place for 500-600 people during Friday- and
-        Saturday nights. After a few months working as a server I promoted to become a bartender which I love, at
-        this
-        time I promoted to head bartender, this means guiding 10+ bartenders through the evening, communicating with
-        management and security and making/keeping our guests happy. <br>
-          On the side I also do some print design to help push De Vooruitgang forward.
-        </p>
-        <a href="/#/portfolio/De%20Vooruitgang=B8riErEUfMLVuepDgdkB">Read more...</a>
-      </section>
-      <hr data-aos="fade-up">
-      <section id="s3" data-aos="fade-up">
-        <h2>Semester 3 - Trial and error</h2>
-        <h6>September 2017 - January 2018</h6>
-        <p>During my third semester I focused the first two months on building fully fucntional webapp for BWventures
-        build in PHP, my main focus was on the front so that means a lot of LESS and vanillaJS. After these two
-        months passed I was given the chance to work on my own projects. I did some UI-design, branding and I got
-        into contact with React and Firebase for the first time.
-        </p>
-        <a href="/#/portfolio/De%20Vooruitgang=B8riErEUfMLVuepDgdkB">Read more...</a>
-      </section>
-      <hr data-aos="fade-up">
-      <section id="s3" data-aos="fade-up">
-        <h2>Founded Swurl Media</h2>
-        <h6>November 2017</h6>
-        <p>In november 2017 I started a small company with a friend of mine. We specialise in webdesign and webdevelopment for small starting company's.
-        </p>
-        <a href="/#/portfolio/De%20Vooruitgang=B8riErEUfMLVuepDgdkB">Read more...</a>
-      </section>
-      <hr data-aos="fade-up">
-      <section id="s3" data-aos="fade-up">
-        <h2>Semester 4 - The buro</h2>
-        <h6>February 2018 - June 2018</h6>
-        <p>In november 2017 I started a small company with a friend of mine. We specialise in webdesign and webdevelopment for small starting company's.
-        </p>
-        <a href="/#/portfolio/De%20Vooruitgang=B8riErEUfMLVuepDgdkB">Read more...</a>
-      </section>
     </section>
   </main>
 </template>

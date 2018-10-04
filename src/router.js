@@ -64,7 +64,8 @@ let router = new Router({
         requiresAuth: true
       }
     }
-  ]
+  ],
+  mode: "history"
 });
 router.beforeEach((to, from, next) => {
   let currentUser = firebase.auth().currentUser;

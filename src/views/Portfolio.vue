@@ -27,9 +27,14 @@ export default {
     };
   },
   created() {
-    const portfolioCollection = firebase.firestore().collection("portfolio");
+    const portfolioCollection = firebase
+      .firestore()
+      .collection("portfolio")
+      .orderBy("name");
     portfolioCollection.onSnapshot(snap => {
+      //Get realtime update
       this.portfolioItems = [];
+      //Reset the array
       snap.forEach(doc => {
         const item = {
           id: doc.id,
@@ -37,6 +42,7 @@ export default {
           height: doc.data().height,
           image: doc.data().image
         };
+        //Push data to an Array
         this.portfolioItems.push(item);
       });
     });
@@ -63,7 +69,7 @@ export default {
     }
   }
   .grid {
-    column-count: 3;
+    column-count: 2;
     column-gap: 20px;
     @media only screen and (max-width: 900px) {
       column-count: 2;
@@ -77,6 +83,7 @@ export default {
       display: flex;
       align-items: flex-end;
       background-size: cover !important;
+      background-position: center;
       justify-content: space-between;
       break-inside: avoid;
       width: 100%;
@@ -112,11 +119,11 @@ export default {
 
 @keyframes wiggle {
   25% {
-    transform: translateX(2.5px);
+    transform: translateX(-2.5px);
     opacity: 1;
   }
   75% {
-    transform: translateX(-2.5px);
+    transform: translateX(2.5px);
     opacity: 1;
   }
 }
