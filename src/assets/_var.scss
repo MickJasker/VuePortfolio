@@ -1,0 +1,20 @@
+//colors:
+$primary: #48ACF0;
+$secondary: #09BC8A;
+
+$warning: #f0c847;
+$error: #f04848;
+$succes: $secondary;
+
+$white: #fff;
+$black: #282828;
+
+//property's:
+$border-radius: 20px;
+
+//elevation:
+$el100: 0 5px 10px rgba($color: $black, $alpha: 0.1),0 0 5px rgba($color: $black, $alpha: 0.05);
+$el200: 0 10px 20px rgba($color: $black, $alpha: 0.1), 0 0 10px rgba($color: $black, $alpha: 0.05);
+$el300: 0 15px 30px rgba($color: $black, $alpha: 0.1), 0 0 20px rgba($color: $black, $alpha: 0.05);
+$el400: 0 20px 40px rgba($color: $black, $alpha: 0.1), 0 0 30px rgba($color: $black, $alpha: 0.05);
+$el500: 0 30px 60px rgba($color: $black, $alpha: 0.1), 0 0 40px rgba($color: $black, $alpha: 0.05);;
