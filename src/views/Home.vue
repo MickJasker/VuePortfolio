@@ -3,13 +3,12 @@
     <section class="landing">
       <h1>Mick Jasker</h1>
       <h4>Webdeveloper, UX-designer and bartender.</h4>
-      <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
     </section>
     <section class="info d-flex">
       <section class="box" data-aos="fade-up">
         <img src="../assets/work.svg" alt="work">
         <h3>My portfolio</h3>
-        <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
+        <h6>View the work I'm the most proud of.</h6>
         <router-link to="/portfolio">
           <button>View my work</button>
         </router-link>
@@ -48,14 +47,22 @@ main {
   background-position: left bottom;
   .landing {
     padding: 150px;
-
+    @media (max-width: 820px) {
+      padding: 70px;
+    }
     h1 {
       font-size: 144px;
+      @media (max-width: 820px) {
+        font-size: 48px;
+      }
     }
 
     h4 {
       font-weight: 300;
       font-size: 36px;
+      @media (max-width: 820px) {
+        font-size: 24px;
+      }
     }
 
     h5 {
@@ -70,6 +77,10 @@ main {
   align-content: center;
   .info {
     justify-content: space-around;
+    align-items: center;
+    @media (max-width: 1100px) {
+      flex-flow: column;
+    }
     .box {
       display: flex;
       flex-flow: column;
@@ -80,7 +91,8 @@ main {
       border-radius: 16px;
       padding: 30px;
       margin: 50px;
-      max-width: 400px;
+      max-width: 800px;
+      width: 90vw;
 
       h3,
       h6,

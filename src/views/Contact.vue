@@ -19,7 +19,7 @@
 .contact {
   display: flex;
   align-items: center;
-  background-image: url("../assets/map.jpg");
+  background-image: url("../assets/eindhoven.jpg");
   background-size: cover;
   background-position: center;
   .contactBlock {
@@ -27,7 +27,7 @@
     background: white;
     box-shadow: $el500;
     border-radius: 20px;
-
+    width: 90vw;
     ul {
       padding: 0;
       margin: 0;

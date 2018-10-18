@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier",
+    "@vue/prettier",
+    "plugin:vue/base"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error"
+    ],
+    "vue/attribute-hyphenation": [
+      "error",
+      "always"
+    ],
+    "vue/html-indent": [
+      "error",
+      2
+    ],
+    "vue/html-self-closing": "error"
+  },
+  "parserOptions": {
+    "parser": "babel-eslint"
+  }
+}
