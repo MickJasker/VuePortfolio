@@ -16,6 +16,7 @@
 </template>
 
 <script>
+// eslint-disable-next-line
 import HeaderComp from "./components/HeaderComp";
 //import firebase from "firebase";
 //import "firebase/firestore";

@@ -17,7 +17,8 @@
 </template>
 
 <script>
-import firebase from "firebase";
+import firebase from "firebase/app";
+
 export default {
   name: "header-comp",
   data() {
@@ -67,10 +68,6 @@ header {
     i {
       padding: 10px;
       color: $primary;
-      background: lighten(
-        $color: rgba($color: $primary, $alpha: 0.8),
-        $amount: 30
-      );
       -webkit-backdrop-filter: blur(10px);
       border-radius: 30px;
       font-size: 30px;
@@ -79,7 +76,6 @@ header {
 
       &:active {
         background: lighten(rgba($color: $primary, $alpha: 0.8), 35);
-        color: lighten($color: $primary, $amount: 15);
       }
     }
 
@@ -130,7 +126,7 @@ header {
 
 .slide-enter-active,
 .slide-leave-active {
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .slide-enter,

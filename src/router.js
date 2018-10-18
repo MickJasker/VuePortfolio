@@ -7,11 +7,12 @@ import About from "./views/About.vue";
 import Contact from "./views/Contact.vue";
 import portfolioItem from "./components/portfolioItem.vue";
 import error from "./views/error.vue";
-import signIn from "./views/signIn.vue";
-import PortfolioAdmin from "./views/PortfolioAdmin.vue";
+import signIn from "./views/admin/signIn.vue";
+import PortfolioAdmin from "./views/admin/PortfolioAdmin.vue";
+import PortfolioAdminEditor from "./views/admin/PortfolioAdminEditor.vue";
 
 Vue.use(Router);
-let router = new Router({
+const router = new Router({
   routes: [
     {
       path: "/",
@@ -60,6 +61,15 @@ let router = new Router({
       path: "/admin",
       name: "PortfolioManager",
       component: PortfolioAdmin,
+      meta: {
+        requiresAuth: true
+      }
+    },
+    {
+      path: "/admin/portfolioEditor-:name=:id",
+      name: "PortfolioAdminEditor",
+      component: PortfolioAdminEditor,
+      props: true,
       meta: {
         requiresAuth: true
       }
