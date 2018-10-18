@@ -31,7 +31,7 @@ export default {
       this.errorMsg = "";
       firebase
         .auth()
-        .setPersistence(firebase.auth.Auth.Persistence.SESSION)
+        .setPersistence(firebase.auth.Auth.Persistence.LOCAL)
         .then(() => {
           return firebase
             .auth()
@@ -51,7 +51,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "../assets/_var.scss";
+@import "../../assets/_var.scss";
 
 .auth {
   .snackbar {
