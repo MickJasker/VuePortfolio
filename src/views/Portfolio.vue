@@ -30,7 +30,7 @@ export default {
   created() {
     const portfolioCollection = firebase
       .firestore()
-      .collection("portfolio")
+      .collection("school-portfolio")
       .orderBy("name");
     portfolioCollection.onSnapshot(snap => {
       //Get realtime update

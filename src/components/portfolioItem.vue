@@ -40,7 +40,7 @@ export default {
   created() {
     firebase
       .firestore()
-      .doc("portfolio/" + this.id)
+      .doc("school-portfolio/" + this.id)
       .onSnapshot(doc => {
         this.content = doc.data().content;
         this.title = doc.data().name;
